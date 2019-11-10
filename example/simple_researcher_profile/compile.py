@@ -1,3 +1,9 @@
+"""
+Simply execute this file with python. Best use pipenv for the requirements,
+ i.e., pipenv run python3 compile.py
+"""
+
+
 import jinja2 as jinja2
 
 from folder_compiler import FolderCompiler

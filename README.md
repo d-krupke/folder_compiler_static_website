@@ -28,7 +28,7 @@ For the cases I need myself, a set of processors is already provided:
 
 ## Example
 
-See in the following example, how simple it is to configure
+See in the following example, how simple it is to configure:
 ```python
 import jinja2 as jinja2
 
@@ -54,5 +54,6 @@ processors = [
 # Compile the files in the folder ./content to ./output
 FolderCompiler(input="./content", output="./output").compile(processors).remove_orphaned_files()
 ```
+A complete example can be found in [./example/simple_researcher_profile](./example/simple_researcher_profile).
 
 But if you want to do something complex like a blog, try something more advanced like [Hyde](https://github.com/hyde/hyde).
