@@ -5,6 +5,8 @@ by mainly applying a markdown generator and jinjer templates in an organized way
 The general assumption is, that every output file only requires a single input file (+template).
 You just specify which Processor is applied for which files (e.g., the MarkdownProcessor for all files ending with ".md" in the input directory).
 
+See also the base project [folder_compiler](https://github.com/d-krupke/folder_compiler).
+
 ## Principles
 
 * The primary focus is to apply a template to content files (e.g. a navigation bar).

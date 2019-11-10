@@ -3,10 +3,10 @@ import jinja2 as jinja2
 from folder_compiler import FolderCompiler
 from folder_compiler.processors import FileCopyProcessor, DevNullProcessor
 
-# Create jinja2 environment as powerful template engine
 from folder_compiler_static_website import HtmlProcessor, MarkdownProcessor, \
     BibtexProcessor
 
+# Create jinja2 environment as powerful template engine
 jinja = jinja2.Environment(
     loader=jinja2.FileSystemLoader('./templates'),
 )

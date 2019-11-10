@@ -10,7 +10,7 @@ jinja2 = "*"
 markdown2 = "*"
 bibtexparser = "*"
 folder-compiler = "*"
-folder-compiler-static-webpage = "*"
+folder-compiler-static-website = "*"
 
 [requires]
 python_version = "3.7"
