@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% block title %}
+{% if metadata.title %}
+{{metadata.title}}
+{else}
+Jon Doe 
+{% endif %}
+{% endblock %}
+
+{% block body %}
+{{content|safe}}
+{% endblock %}
+

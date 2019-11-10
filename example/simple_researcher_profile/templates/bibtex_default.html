@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+
+{% block body %}
+<p>
+    Here is a list with my publications.
+</p>
+<h2>Publications</h2>
+{% for entry in bibtex["entries"] %}
+<p>
+    {{ entry["author"]|join(", ") }}
+    <br>
+    <b>{{ entry["title"] }}
+        {%- if "url" in entry %}
+        [<a href="{{entry['url']}}">URL</a>]
+        {% endif -%}
+        {%- if "doi" in entry %}
+        [<a href="https://doi.org/{{entry['doi']}}">DOI</a>]
+        {% endif -%}
+    </b><br>
+    <i>
+        {{- entry["year"] -}}
+        {%- if "type" in entry %}, {{ entry["type"] }}{% endif -%}
+        {%- if "journal" in entry %}, {{ entry["journal"] }}{% endif -%}
+        {%- if "booktitle" in entry %}, {{ entry["booktitle"] }}{% endif -%}
+        {%- if "volume" in entry %}, Volume: {{ entry["volume"] }}{% endif -%}
+        {%- if "issue" in entry %}, Issue: {{ entry["issue"]}}{% endif -%}
+        {%- if "pages" in entry %}, pp. {{ entry["pages"] }}{% endif -%}
+    </i>
+</p>
+{% endfor %}
+{% endblock %}
